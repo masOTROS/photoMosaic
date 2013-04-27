@@ -23,6 +23,12 @@ class testApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
     void addImage(string file);
+    void fillImages();
     
     vector< ofPtr<ofImage> > images[ALFA];
+    
+    ofVideoGrabber 		camera;
+    
+    bool                bMosaic;
+    ofFbo               mosaic;
 };
